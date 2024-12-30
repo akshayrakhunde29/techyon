@@ -89,18 +89,63 @@
   width: 100%;
   border-collapse: collapse;
   white-space: nowrap;
+  font-size: 13px;
 
+  thead,
   th,
   td {
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 0.5rem;
     text-align: left;
-    border: 1px solid $border-color;
+    border: 2px solid $border-color;
+  }
+
+  tbody {
+    th,
+    td {
+      padding: 0rem 0.7rem;
+      text-align: left;
+      border: 2px solid $border-color;
+    }
+    .task-body {
+      td {
+        padding: 0.5rem !important;
+      }
+    }
+    .access_project {
+      border: 1px solid #2d446e;
+      vertical-align: middle;
+      padding: 0rem 0.2rem 0.2rem;
+      border-radius: 8px;
+      font-size: 0.7rem;
+      margin-left: -10px;
+      color: #2d446e;
+      font-weight: 500;
+      background: white;
+      img {
+        vertical-align: middle;
+        width: 0.8rem;
+        margin-right: 1px;
+      }
+      span {
+        vertical-align: middle;
+      }
+    }
   }
 
   th {
     font-weight: 500;
     color: $text-light;
-    background-color: #f9fafb;
+    background-color: white;
+    vertical-align: middle;
+    img {
+      width: 1rem;
+      height: 1rem;
+      vertical-align: middle;
+    }
+    span {
+      vertical-align: middle;
+      margin-left: 2px;
+    }
   }
 
   tr:hover {
@@ -118,6 +163,9 @@
     height: 24px;
     border-radius: 50%;
     background-color: $bg-light;
+    img {
+      border-radius: 50%;
+    }
   }
 }
 
@@ -142,49 +190,58 @@
 
 .status {
   display: inline-flex;
-  padding: 0.25rem 0.75rem;
+  padding: 0rem 0.75rem;
   border-radius: 1rem;
   font-size: 0.875rem;
   font-weight: 500;
+  color: white;
 
   &--not-started {
-    background-color: #f3f4f6;
+    background-color: #b0b0b0;
     color: $text-light;
+    border: 1px solid $border-color !important;
   }
 
   &--in-progress {
-    background-color: #dbeafe;
+    background-color: #4a90e2;
     color: #1e40af;
+    border: none !important;
   }
 
   &--completed {
-    background-color: #dcfce7;
+    background-color: #4caf50;
     color: #15803d;
+    border: none !important;
   }
 
   &--archived {
-    background-color: #f3f4f6;
+    background-color: #607d8b;
     color: $text-light;
+    border: none !important;
   }
 
   &--review {
-    background-color: #dbeafe;
+    background-color: #3b78a3;
     color: #1e40af;
+    border: 1px solid $border-color !important;
   }
 
   &--on-track {
-    background-color: #dcfce7;
+    background-color: #cac000;
     color: #15803d;
+    border: none !important;
   }
 
   &--delayed {
-    background-color: #fee2e2;
+    background-color: #f42e2e;
     color: #b91c1c;
+    border: none !important;
   }
 
   &--revision {
-    background-color: #fef3c7;
+    background-color: #3e4b4f;
     color: #92400e;
+    border: none !important;
   }
 }
 
@@ -205,5 +262,7 @@
   .table-container {
     margin: 0 -1rem;
     border-radius: 0;
+    margin: 0.4rem;
   }
+  
 }

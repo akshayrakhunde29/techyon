@@ -29,7 +29,6 @@ const Navbar = ({ isSidebarOpen }) => {
   return (
     <>
       <aside className={`sidebar ${isSidebarOpen ? "sidebar--open" : ""}`}>
-      {/* <aside className={`sidebar sidebar--open`}> */}
         <nav className="sidebar__nav">
           {menuItems.map((item, index) => (
             <a
