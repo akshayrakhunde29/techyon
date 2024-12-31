@@ -1,5 +1,5 @@
 // dashboard.scss
-$primary-color: #2D446E;
+$primary-color: #2d446e;
 $secondary-color: #3b82f6;
 $text-dark: #111827;
 $text-light: #6b7280;
@@ -7,6 +7,12 @@ $border-color: #e5e7eb;
 $bg-light: #f3f4f6;
 $sidebar-width: 240px;
 $sidebar-collapsed-width: 64px;
+
+@mixin smallMobile {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
 
 @mixin mobile {
   @media (max-width: 768px) {

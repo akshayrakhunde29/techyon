@@ -10,6 +10,7 @@ import people from "../images/people.png";
 import grid from "../images/grid_view.png";
 import help from "../images/help.png";
 import feedback from "../images/Feedback.png";
+import line from "../images/line.png";
 
 const Navbar = ({ isSidebarOpen }) => {
   const menuItems = [
@@ -22,6 +23,7 @@ const Navbar = ({ isSidebarOpen }) => {
     { icon: icon, label: "icon", isActive: false },
     { icon: document, label: "document", isActive: false },
     { icon: people, label: "people", isActive: false },
+    { icon: line, label: "line", isActive: false },
     { icon: grid, label: "grid", isActive: false },
     { icon: help, label: "help", isActive: false },
     { icon: feedback, label: "feedback", isActive: false },

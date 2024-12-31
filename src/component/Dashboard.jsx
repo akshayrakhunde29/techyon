@@ -1,4 +1,3 @@
-// Dashboard.jsx
 import React from "react";
 import DashboardTable from "./DashboardTable";
 import ProjectHeader, { ProjectFilter } from "./ProjectHeader";

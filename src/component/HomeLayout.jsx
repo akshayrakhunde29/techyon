@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Header from "./Header";
 import Navbar from "./Navbar";
 
@@ -8,8 +8,10 @@ const HomeLayout = ({ children }) => {
   return (
     <div className="dashboard">
       <Header isSidebarOpen={isSidebarOpen} setSidebarOpen={setSidebarOpen} />
-      <Navbar isSidebarOpen={isSidebarOpen} />
-      {children}
+      <div style={{ display: "flex", background: "white" }}>
+        <Navbar isSidebarOpen={isSidebarOpen} />
+        {children}
+      </div>
     </div>
   );
 };
