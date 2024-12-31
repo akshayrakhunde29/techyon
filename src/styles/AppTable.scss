@@ -216,48 +216,56 @@
     background-color: #b0b0b0;
     color: $text-light;
     border: 1px solid $border-color !important;
+    text-align: center !important;
   }
 
   &--in-progress {
     background-color: #4a90e2;
     color: #1e40af;
     border: none !important;
+    text-align: center !important;
   }
 
   &--completed {
     background-color: #4caf50;
     color: #15803d;
     border: none !important;
+    text-align: center !important;
   }
 
   &--archived {
     background-color: #607d8b;
     color: $text-light;
     border: none !important;
+    text-align: center !important;
   }
 
   &--review {
     background-color: #3b78a3;
     color: #1e40af;
     border: 1px solid $border-color !important;
+    text-align: center !important;
   }
 
   &--on-track {
     background-color: #cac000;
     color: #15803d;
     border: none !important;
+    text-align: center !important;
   }
 
   &--delayed {
     background-color: #f42e2e;
     color: #b91c1c;
     border: none !important;
+    text-align: center !important;
   }
 
   &--revision {
     background-color: #3e4b4f;
     color: #92400e;
     border: none !important;
+    text-align: center !important;
   }
 }
 

@@ -27,6 +27,7 @@
   transform: translateX(-100%);
   z-index: 0;
   overflow: auto;
+  scrollbar-width: none;
   &__item-icon {
     img {
       width: 1.8rem;
